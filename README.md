@@ -1,24 +1,50 @@
-# README
+# BooksRentalApp
+Technical test on Ruby on Rails (App)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+- You are creating an App for a new books rental/buy service
+- Create App features to enable the following:
 
-* Ruby version
+  - Books
+    - Creating and deleting books
+    - changing book details (name, isbn, genre, author, editorial)
+  - Author
+    - Creating and deleting authors
+    - changing author details (name, country, dob)
+  - Reading List
+    - Creating and deleting lists
+    - changing reading list name
+    - adding/removing books from reading list
 
-* System dependencies
 
-* Configuration
+- The App should be written in Ruby on Rails or another api framework
 
-* Database creation
+- The data should be stored in a database of your choice
 
-* Database initialization
+- Not frontend development
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Rails README
 
-* ...
+> This README would normally document whatever steps are necessary to get the application up and running.
+
+> Things you may want to cover:
+
+> * Ruby version
+
+> * System dependencies
+
+> * Configuration
+
+> * Database creation
+
+> * Database initialization
+
+> * How to run the test suite
+
+> * Services (job queues, cache servers, search engines, etc.)
+
+> * Deployment instructions
+
+> * ...
