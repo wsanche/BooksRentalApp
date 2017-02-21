@@ -55,3 +55,22 @@ b7 = Book.create(name: "Brave New World",
 # 	editorial: "" )
 
 
+a1 = Author.create(name: "Leo Tolstoy", 
+	country: "RU", 
+	dob: "September 9, 1828" )
+a2 = Author.create(name: "J. R. R. Tolkien", 
+	country: "ZA", 
+	dob: "January 3, 1892" )
+a3 = Author.create(name: "George Orwell", 
+	country: "IN", 
+	dob: "June 25, 1903" )
+a4 = Author.create(name: "Ernest Hemingway", 
+	country: "US", 
+	dob: "July 21, 1899" )
+a5 = Author.create(name: "Aldous Huxley", 
+	country: "GB", 
+	dob: "November 22, 1963" )
+
+#a1 = Author.create(name: "", 
+#	country: "", 
+#	dob: "" )

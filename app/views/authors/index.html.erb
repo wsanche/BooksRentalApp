@@ -1,0 +1,9 @@
+<h1>Author Index</h1>
+
+<% @authors.each do |author| %>
+  <h2><%= link_to author.name, author_path(author) %></h2>
+<% end %>
+
+<%= link_to "Add Author", new_author_path %>
+
+<h2><%= link_to "Books", books_path %></h2>

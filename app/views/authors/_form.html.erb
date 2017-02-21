@@ -1,0 +1,6 @@
+<%= simple_form_for @author do |f| %>
+  <%= f.input :name, label: "Author Name" %>
+  <%= f.input :country %>
+  <%= f.input :dob, as: :date, :start_year => Date.today.year - 3000, :end_year => Date.today.year, :max_years_allowed => 3000, :order => [:year, :month, :day], label: "Date of Birth" %>
+  <%= f.button :submit %>
+<% end %>
