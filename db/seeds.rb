@@ -126,3 +126,12 @@ b5.authors << a3
 b6.authors << a4
 b7.authors << a5
 b8.authors << [a6, a7]
+
+
+rl1 = ReadingList.create(name: "First Reading List")
+rl2 = ReadingList.create(name: "Second Reading List")
+rl3 = ReadingList.create(name: "Third Reading List")
+
+rl1.books << [b1, b2, b3, b4, b5, b6, b7, b8]
+rl2.books << [b1, b2, b3, b4, b5]
+rl3.books << [b6, b7, b8]
