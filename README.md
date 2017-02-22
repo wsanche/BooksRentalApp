@@ -1,5 +1,5 @@
 # BooksRentalApp
-Technical test on Ruby on Rails (App)
+Technical test on Ruby on Rails (App): this projected has been used to learn Rails based on Codecademy, Codeschool, video tutorials, and reading documentation and forums
 
 
 - You are creating an App for a new books rental/buy service
