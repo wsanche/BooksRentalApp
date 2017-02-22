@@ -1,4 +1,8 @@
 class Author < ApplicationRecord
+	has_and_belongs_to_many :books
+	#accepts_nested_attributes_for :books
+
+
 #	def country_name
 #    	country = self.country
 #    	ISO3166::Country[country]

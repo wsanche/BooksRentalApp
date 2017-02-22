@@ -2,7 +2,7 @@
   <%= f.input :name, label:"Book Name" %>
   <%= f.input :isbn %>
   <%= f.input :genre %>
-  <%= f.input :author %>
   <%= f.input :editorial %>
+  <%= f.association :authors, hint: "Only added authors will be on this list" %>
   <%= f.button :submit %>
 <% end %>

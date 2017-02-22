@@ -11,6 +11,8 @@ class BooksController < ApplicationController
 
 	def new
 		@book = Book.new
+		#@book.build_author  #use this for to_one relationship
+		#@book.authors.build() #use this for to_many relationship
 	end
 
 	def create
@@ -41,7 +43,10 @@ class BooksController < ApplicationController
 
 	private
 		def book_params
-			params.require(:book).permit(:name, :isbn, :genre, :author, :editorial)
+			#params.require(:book).permit(:name, :isbn, :genre, :editorial, :author)
+			#params.require(:book).permit(:name, :isbn, :genre, :editorial)
+			#params.require(:book).permit(:name, :isbn, :genre, :editorial, :authors_attributes => [:name])
+			params.require(:book).permit(:name, :isbn, :genre, :editorial, :author_ids => [])
 		end
 
 		def find_book
