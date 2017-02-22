@@ -1,0 +1,10 @@
+<h1>Index Reading List</h1>
+
+<% @reading_lists.each do |reading_list| %>
+	<h3><%= link_to reading_list.name, reading_list_path(reading_list) %></h3>
+<% end %>
+
+<%= link_to "Add Reading List", new_reading_list_path %>
+
+<h2><%= link_to "Books", books_path %></h2>
+<h2><%= link_to "Authors", authors_path %></h2>

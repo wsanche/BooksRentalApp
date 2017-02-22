@@ -1,0 +1,19 @@
+<h1><%= @book.name %></h1>
+<p><%= @book.isbn %></p>
+<p><%= @book.genre %></p>
+<p><%= @book.editorial %></p>
+<h3><% if @book.authors.count == 1 %>
+	Author:
+	<% elsif @book.authors.count > 1 %>
+	Authors:
+	<% end %>
+</h3>
+<% if @book.authors.count >= 1 %>
+	<% @book.authors.all.each do |author| %>
+		<h4><%= link_to author.name, author_path(author) %></h4>
+	<% end %>
+<% end %>
+
+<%= link_to "Back to Books", books_path %>
+<%= link_to "Edit", edit_book_path(@book) %>
+<%= link_to "Delete", book_path(@book), method: :delete, data: {confirm: "Are you sure?"} %>

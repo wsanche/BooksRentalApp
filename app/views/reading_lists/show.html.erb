@@ -1,0 +1,10 @@
+<h1><%= @reading_list.name %></h1>
+<% if @reading_list.books.count >= 1 %>
+	<% @reading_list.books.all.each do |book| %>
+		<h4><%= link_to book.name, book_path(book) %></h4>
+	<% end %>
+<% end %>
+
+<%= link_to "Back to Reading Lists", reading_lists_path %>
+<%= link_to "Edit", edit_reading_list_path(@reading_list) %>
+<%= link_to "Delete", reading_list_path(@reading_list), method: :delete, data: {confirm: "Are you sure?"} %>

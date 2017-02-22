@@ -1,0 +1,15 @@
+<h1><%= @author.name %></h1>
+<!--<p><%= @author.country %></p>-->
+<h4>Country: <%= @author.country_name %></h4>
+<h4>Date of Birth: <%= @author.dob.strftime("%B %d, %Y") %></h4>
+
+<% if @author.books.all.count > 0 %>
+	<h3>Books:</h3>
+	<% @author.books.all.each do |book|%>
+		<h4><%= link_to book.name, book_path(book) %></h4>
+	<% end %>
+<% end %>
+
+<%= link_to "Back to Authors", authors_path %>
+<%= link_to "Edit", edit_author_path(@author) %>
+<%= link_to "Delete", author_path(@author), method: :delete, data: {confirm: "Are you sure?"} %>
